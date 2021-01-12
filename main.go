@@ -21,6 +21,8 @@ import (
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 	commonMiddleware "github.com/weaveworks/common/middleware"
+
+	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 )
 
 var (
@@ -48,6 +50,11 @@ func init() {
 }
 
 func main() {
+	tracer.Start(
+        tracer.WithEnv("prod"),
+        tracer.WithService("user"),
+        tracer.WithServiceVersion("v1"),
+    )
 
 	flag.Parse()
 	// Mechanical stuff.
@@ -164,4 +171,5 @@ func main() {
 	}()
 
 	logger.Log("exit", <-errc)
+	defer tracer.Stop()
 }
