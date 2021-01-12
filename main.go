@@ -50,10 +50,10 @@ func init() {
 }
 
 func main() {
-	ddagent.tracer.Start(
-        tracer.WithEnv("prod"),
-        tracer.WithService("user"),
-        tracer.WithServiceVersion("v1"),
+	ddagent.Start(
+        ddagent.WithEnv("prod"),
+        ddagent.WithService("user"),
+        ddagent.WithServiceVersion("v1"),
     )
 
 	flag.Parse()
@@ -171,5 +171,5 @@ func main() {
 	}()
 
 	logger.Log("exit", <-errc)
-	defer ddagent.tracer.Stop()
+	defer ddagent.Stop()
 }
