@@ -22,7 +22,7 @@ import (
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 	commonMiddleware "github.com/weaveworks/common/middleware"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	ddagent "gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 )
 
 var (
@@ -50,7 +50,7 @@ func init() {
 }
 
 func main() {
-	tracer.Start(
+	ddagent.tracer.Start(
         tracer.WithEnv("prod"),
         tracer.WithService("user"),
         tracer.WithServiceVersion("v1"),
@@ -171,5 +171,5 @@ func main() {
 	}()
 
 	logger.Log("exit", <-errc)
-	defer tracer.Stop()
+	defer ddagent.tracer.Stop()
 }
