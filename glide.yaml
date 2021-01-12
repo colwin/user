@@ -28,3 +28,7 @@ import:
 - package: github.com/weaveworks/common
   subpackages:
   - middleware
+- package: gopkg.in/DataDog/dd-trace-go.v1
+  version: v1.29.0-alpha.1
+  subpackages:
+  - ddtrace/tracer
