@@ -1,274 +1,146 @@
-hash: 13b8482b602e797cba6b8a11b07897f92cdb1fc15cc7eb0c96b0415220f3a558
-updated: 2021-01-12T14:11:00.560438+05:30
+hash: ab1322ca6d24e40907af3a701959880ad721afa2e1b67eaf0c945bb74c9a5c30
+updated: 2017-04-28T12:53:43.461401871+02:00
 imports:
 - name: github.com/afex/hystrix-go
-  version: fa1af6a1f4f56e0e50d427fe901cd604d8c6fb8a
+  version: 39520ddd07a9d9a071d615f7476798659f5a3b89
   subpackages:
   - hystrix
+- name: github.com/apache/thrift
+  version: e0ccbd6e62e14f32d7c5fe0f9cec6eff3259b863
+  subpackages:
+  - lib/go/thrift
 - name: github.com/beorn7/perks
-  version: 37c8de3658fcb183f997c4e13e8337516ab753e6
+  version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
   subpackages:
   - quantile
-- name: github.com/DataDog/datadog-go
-  version: 8a121120943792c69713cf8dee89a1cc6d47a0a0
+- name: github.com/davecgh/go-spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
   subpackages:
-  - statsd
+  - spew
+- name: github.com/eapache/go-resiliency
+  version: b86b1ec0dd4209a588dc1285cdd471e73525c0b3
+  subpackages:
+  - breaker
+- name: github.com/eapache/go-xerial-snappy
+  version: bb955e01b9346ac19dc29eb16586c90ded99a98c
+- name: github.com/eapache/queue
+  version: 44cc805cf13205b55f69e14bcb69867d1ae92f98
 - name: github.com/felixge/httpsnoop
-  version: 80c3c2123b72a19bf86e424759ce61a51b0f5f1b
+  version: 287b56e9e314227d3113c7c6b434d31aec68089d
 - name: github.com/go-kit/kit
   version: fadad6fffe0466b19df9efd9acde5c9a52df5fa4
   subpackages:
   - circuitbreaker
   - endpoint
   - log
-  - log/level
   - metrics
   - metrics/internal/lv
   - metrics/prometheus
   - tracing/opentracing
   - transport/http
 - name: github.com/go-logfmt/logfmt
-  version: 3be5f6aae7db841d31dc5e1b3bb7b4cff19200b3
+  version: d4327190ff838312623b09bfeb50d7c93c8d9c1d
 - name: github.com/go-stack/stack
-  version: 2fee6af1a9795aafbe0253a0cfbdf668e1fb8a9a
-- name: github.com/gogo/googleapis
-  version: 68b0159b7869370dc411c68dd2673b8867c5c171
-  subpackages:
-  - google/rpc
+  version: 100eb0c0a9c5b306ca2fb4f165df21d80ada4b82
 - name: github.com/gogo/protobuf
-  version: b03c65ea87cdc3521ede29f62fe3ce239267c1bc
+  version: f9114dace7bd920b32f943b3c73fafbcbab2bf31
   subpackages:
   - proto
-  - sortkeys
-  - types
-- name: github.com/gogo/status
-  version: 935308aef7372e7685e8fbee162aae8f7a7e515a
 - name: github.com/golang/protobuf
-  version: 4846b58453b3708320bdb524f25cc5a1d9cda4d4
+  version: 1f49d83d9aa00e6ce4fc8258c71cc7786aec968a
   subpackages:
   - proto
-  - ptypes
-  - ptypes/any
-  - ptypes/duration
-  - ptypes/timestamp
-- name: github.com/google/uuid
-  version: 85223faccf99409308cd169d9608753a95d21083
+- name: github.com/golang/snappy
+  version: d9eb7a3d35ec988b8585d4a0068e462c27d28380
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
 - name: github.com/gorilla/mux
-  version: d07530f46e1eec4e40346e24af34dcc6750ad39f
+  version: cf79e51a62d8219d52060dfc1b4e810414ba2d15
+- name: github.com/klauspost/crc32
+  version: cb6bfca970f6908083f26f39a79009d608efd5cd
+- name: github.com/kr/logfmt
+  version: b84e30acd515aadc4b783ad4ff83aff3299bdfe0
 - name: github.com/matttproud/golang_protobuf_extensions
-  version: c182affec369e30f25d3eb8cd8a478dee585ae7d
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
   subpackages:
   - pbutil
-- name: github.com/opentracing-contrib/go-observer
-  version: a52f2342449246d5bcc273e65cbdcfa5f7d6c63c
-- name: github.com/opentracing-contrib/go-stdlib
-  version: 08d136d2c7dbc58d5ab7889a6423429746219aa1
-  subpackages:
-  - nethttp
 - name: github.com/opentracing/opentracing-go
-  version: 5d89d1a3e9416579079d2145e8cca9a5022d4277
+  version: 5e5abf838007b08f96ae057bc182636a178da0b9
   subpackages:
   - ext
   - log
-- name: github.com/openzipkin/zipkin-go
-  version: 705fed43cca41dc2b99a3f36468a68053f97de28
-  subpackages:
-  - idgenerator
-  - model
-  - propagation
-  - propagation/b3
-  - reporter
 - name: github.com/openzipkin/zipkin-go-opentracing
-  version: 223664cff43dfd9f54659ff15dc4bd6e023d0c14
-- name: github.com/philhofer/fwd
-  version: 9bcb9cab1b0394d8516a132ec243ba944efdb644
-- name: github.com/pkg/errors
-  version: ba968bfe8b2f7e042a574c888954fccecfa385b4
+  version: 594640b9ef7e5c994e8d9499359d693c032d738c
+  subpackages:
+  - _thrift/gen-go/scribe
+  - _thrift/gen-go/zipkincore
+  - flag
+  - types
+  - wire
+- name: github.com/pierrec/lz4
+  version: 5c9560bfa9ace2bf86080bf40d46b34ae44604df
+- name: github.com/pierrec/xxHash
+  version: 5a004441f897722c627870a981d02b29924215fa
+  subpackages:
+  - xxHash32
 - name: github.com/prometheus/client_golang
-  version: 170205fb58decfd011f1550d4cfb737230d7ae4f
+  version: 5636dc67ae776adf5590da7349e70fbb9559972d
   subpackages:
   - prometheus
-  - prometheus/internal
   - prometheus/promhttp
 - name: github.com/prometheus/client_model
-  version: 60555c9708c786597e6b07bf846d0dc5c2a46f54
+  version: fa8ad6fec33561be4280a8f0514318c79d7f6cb6
   subpackages:
   - go
 - name: github.com/prometheus/common
-  version: 20c99e7aa07352b599bd0517cd5ca945f4af0407
+  version: 9a94032291f2192936512bab367bc45e77990d6a
   subpackages:
   - expfmt
   - internal/bitbucket.org/ww/goautoneg
   - model
 - name: github.com/prometheus/procfs
-  version: 5a16cb2528562e8ed35fa2275ecd53e9af6fa091
-  subpackages:
-  - internal/fs
-  - internal/util
-- name: github.com/sirupsen/logrus
-  version: cd4bf4ef8de16b243cce0e062742feb34128648b
-- name: github.com/tinylib/msgp
-  version: 82be0922cb896b3f0ea7df4d1f5e3c5911f92ac8
-  subpackages:
-  - msgp
-- name: github.com/uber/jaeger-client-go
-  version: fe3fa553c313b32f58cc684a59a4d48f03e07df9
-  subpackages:
-  - internal/baggage
-  - internal/reporterstats
-  - internal/spanlog
-  - internal/throttler
-  - log
-  - thrift
-  - thrift-gen/agent
-  - thrift-gen/jaeger
-  - thrift-gen/sampling
-  - thrift-gen/zipkincore
-  - utils
-- name: github.com/uber/jaeger-lib
-  version: 913f2d19ac0541c6e986209adcec4904c1a565b6
-  subpackages:
-  - metrics
+  version: abf152e5f3e97f2fafac028d2cc06c1feb87ffa5
+- name: github.com/rcrowley/go-metrics
+  version: 1f30fe9094a513ce4c700b9a54458bbb0c96996c
+- name: github.com/Shopify/sarama
+  version: 0fb560e5f7fbcaee2f75e3c34174320709f69944
+- name: github.com/Sirupsen/logrus
+  version: 10f801ebc38b33738c9d17d50860f484a0988ff5
 - name: github.com/weaveworks/common
-  version: 73225442af7da93ec8f6a6e2f7c8aafaee3f8840
+  version: f94043b3da140c7a735b1f2f286d72d19014b200
   subpackages:
   - errors
-  - grpc
-  - httpgrpc
-  - logging
   - middleware
   - user
-- name: github.com/weaveworks/promrus
-  version: 207ae7fe734d31ba6e5fe785b202db3d4f90f864
-- name: go.uber.org/atomic
-  version: 12f27ba2637fa0e13772a4f05fa46a5d18d53182
 - name: golang.org/x/net
-  version: 6772e930b67bb09bf22262c7378e7d2f67cf59d1
+  version: 7394c112eae4dba7e96bfcfe738e6373d61772b4
   subpackages:
   - context
   - context/ctxhttp
-  - http/httpguts
   - http2
   - http2/hpack
-  - idna
   - internal/timeseries
+  - lex/httplex
   - trace
 - name: golang.org/x/sys
-  version: 489259a85091f60ac24636e6f0eeda70f530a981
+  version: 99f16d856c9836c42d24e7ab64ea72916925fa97
   subpackages:
-  - internal/unsafeheader
   - unix
-  - windows
-  - windows/registry
-- name: golang.org/x/text
-  version: 75a595aef632b07c6eeaaa805adb6f0f66e4130e
-  subpackages:
-  - secure/bidirule
-  - transform
-  - unicode/bidi
-  - unicode/norm
-- name: golang.org/x/time
-  version: 7e3f01d253248a0a5694eb5b7376dfea18b6397e
-  subpackages:
-  - rate
-- name: golang.org/x/xerrors
-  version: 5ec99f83aff198f5fbd629d6c8d8eb38a04218ca
-  subpackages:
-  - internal
-- name: google.golang.org/genproto
-  version: 22ae2b108f894df65490ecf5854ee0278622920d
-  subpackages:
-  - googleapis/rpc/status
 - name: google.golang.org/grpc
-  version: 4cf4a98505bcdfb27ea2a5427b6e5a2d143dd060
+  version: 50955793b0183f9de69bd78e2ec251cf20aab121
   subpackages:
-  - attributes
-  - backoff
-  - balancer
-  - balancer/base
-  - balancer/grpclb/state
-  - balancer/roundrobin
-  - binarylog/grpc_binarylog_v1
   - codes
-  - connectivity
   - credentials
-  - encoding
-  - encoding/proto
   - grpclog
   - internal
-  - internal/backoff
-  - internal/balancerload
-  - internal/binarylog
-  - internal/buffer
-  - internal/channelz
-  - internal/credentials
-  - internal/envconfig
-  - internal/grpclog
-  - internal/grpcrand
-  - internal/grpcsync
-  - internal/grpcutil
-  - internal/metadata
-  - internal/resolver
-  - internal/resolver/dns
-  - internal/resolver/passthrough
-  - internal/resolver/unix
-  - internal/serviceconfig
-  - internal/status
-  - internal/syscall
-  - internal/transport
-  - internal/transport/networktype
-  - keepalive
   - metadata
+  - naming
   - peer
-  - resolver
-  - serviceconfig
   - stats
-  - status
   - tap
-- name: google.golang.org/protobuf
-  version: 160c7477e0e899d5072bb25635f46053df619fbf
-  subpackages:
-  - encoding/prototext
-  - encoding/protowire
-  - internal/descfmt
-  - internal/descopts
-  - internal/detrand
-  - internal/encoding/defval
-  - internal/encoding/messageset
-  - internal/encoding/tag
-  - internal/encoding/text
-  - internal/errors
-  - internal/filedesc
-  - internal/filetype
-  - internal/flags
-  - internal/genid
-  - internal/impl
-  - internal/order
-  - internal/pragma
-  - internal/set
-  - internal/strs
-  - internal/version
-  - proto
-  - reflect/protoreflect
-  - reflect/protoregistry
-  - runtime/protoiface
-  - runtime/protoimpl
-  - types/known/anypb
-  - types/known/durationpb
-  - types/known/timestamppb
-- name: gopkg.in/DataDog/dd-trace-go.v1
-  version: 75d7e5311c7df567073593d6a0f197564f468d5e
-  subpackages:
-  - ddtrace
-  - ddtrace/ext
-  - ddtrace/internal
-  - ddtrace/tracer
-  - internal
-  - internal/globalconfig
-  - internal/log
-  - internal/version
+  - transport
 - name: gopkg.in/mgo.v2
-  version: a6b53ec6cb22a3699387a57a161566f9402ee85b
+  version: 3f83fa5005286a7fe593b055f0d7771a7dce4655
   subpackages:
   - bson
   - dbtest
@@ -276,5 +148,5 @@ imports:
   - internal/sasl
   - internal/scram
 - name: gopkg.in/tomb.v2
-  version: d5d1b5820637886def9eef33e03a27a9f166942c
+  version: 14b3d72120e8d10ea6e6b7f87f7175734b1faab8
 testImports: []
